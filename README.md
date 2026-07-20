@@ -130,6 +130,22 @@ flowchart TD
     SplunkHEC --> SplunkDash
 ```
 --- 
+
+
+## Documentation
+
+Cloud-SOAR documentation is organized into dedicated guides to keep the repository easy to navigate.
+
+| Guide | Description |
+|-------|-------------|
+| **[Installation Guide](docs/INSTALL.md)** | Deploy Cloud-SOAR using Docker, LocalStack, Terraform, and Splunk Enterprise. |
+| **Usage Guide** *(Coming Soon)* | Learn how to operate Cloud-SOAR and execute security workflows. |
+| **Demo & Walkthrough** *(Coming Soon)* | End-to-end demonstrations with screenshots and attack simulations. |
+| **Architecture Guide** *(Coming Soon)* | Deep dive into the platform architecture and event flow. |
+| **Detection Catalog** *(Coming Soon)* | Detailed documentation for each supported detection and remediation workflow. |
+| **Troubleshooting** *(Coming Soon)* | Common deployment issues and their resolutions. |
+
+---
 ## Design Principles
 
 Cloud-SOAR is built around several core engineering principles:
