@@ -1,0 +1,51 @@
+<dashboard version="1.1" theme="dark">
+  <label>AWS Cloud SOAR Automated Response</label>
+  <row>
+    <panel>
+      <title>MITRE ATT&amp;CK Breakdown</title>
+      <chart>
+        <search>
+          <query>source="http:AWS-Soar-Engine" | stats count by "MITRE ATT&amp;CK"</query>
+          <earliest>0</earliest>
+          <latest></latest>
+          <refresh>30s</refresh>
+          <refreshType>delay</refreshType>
+        </search>
+        <option name="charting.chart">column</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+    <panel>
+      <title>Alert Severity Breakdown</title>
+      <chart>
+        <search>
+          <query>source="http:AWS-Soar-Engine" | stats count by Severity</query>
+          <earliest>0</earliest>
+          <latest></latest>
+          <refresh>30s</refresh>
+          <refreshType>delay</refreshType>
+        </search>
+        <option name="charting.chart">pie</option>
+        <option name="charting.drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </chart>
+    </panel>
+  </row>
+  <row>
+    <panel>
+      <title>Real-Time Action Log</title>
+      <table>
+        <search>
+          <query>source="http:AWS-Soar-Engine" | table _time, Detection, "Affected Resource", "Action Taken", "Remediation Success" | sort - _time</query>
+          <earliest>0</earliest>
+          <latest></latest>
+          <refresh>30s</refresh>
+          <refreshType>delay</refreshType>
+        </search>
+        <option name="drilldown">none</option>
+        <option name="refresh.display">progressbar</option>
+      </table>
+    </panel>
+  </row>
+</dashboard>

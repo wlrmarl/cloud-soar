@@ -1,0 +1,22 @@
+# Terraform local state and binaries
+.terraform/
+*.tfstate
+*.tfstate.*
+.terraform.lock.hcl
+*.tfvars
+
+# Lambda packages
+*.zip
+
+# OS and IDE specific files
+.env
+splunk_setup/.env
+.DS_Store
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+
+# Local test outputs
+response.json
+.pytest_cache/
