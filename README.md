@@ -2,6 +2,22 @@
 
 > **A cloud-native Security Orchestration, Automation, and Response (SOAR) platform that continuously detects high-risk security events, executes deterministic remediation workflows, and forwards structured incident telemetry into Splunk SIEM for centralized security operations.**
 
+<p align="center">
+
+![AWS](https://img.shields.io/badge/AWS-Compatible-FF9900?logo=amazonaws&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-IaC-844FBA?logo=terraform&logoColor=white)
+![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
+![Splunk](https://img.shields.io/badge/Splunk-Enterprise-65A637?logo=splunk&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-Containerized-2496ED?logo=docker&logoColor=white)
+
+![Architecture](https://img.shields.io/badge/Architecture-Event--Driven-blue)
+![Automation](https://img.shields.io/badge/SOAR-Automated-success)
+![IaC](https://img.shields.io/badge/Provisioning-Terraform-844FBA)
+![MITRE](https://img.shields.io/badge/MITRE-ATT%26CK-red)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+</p>
+
 Cloud Security Automation Framework (**Cloud-SOAR**) is an event-driven cloud security platform designed to automate the detection, containment, and reporting of common cloud security threats.
 
 The platform continuously monitors cloud audit events, identifies security misconfigurations and unauthorized infrastructure changes, invokes dedicated remediation workflows, and generates structured incident records for centralized analysis within Splunk SIEM.
